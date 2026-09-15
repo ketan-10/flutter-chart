@@ -82,6 +82,16 @@ abstract class ChartTheme {
 
   double get crosshairInformationBoxContainerGlassBackgroundBlur;
 
+  /// Size of the action icons in the on-chart indicator labels.
+  ///
+  /// The default suits a phone-sized chart; a wider canvas makes the same
+  /// absolute size read as much smaller against its surroundings, so a host
+  /// rendering on one will usually want to raise this.
+  double get indicatorLabelIconSize;
+
+  /// Text style of the title in the on-chart indicator labels.
+  TextStyle get indicatorLabelTextStyle;
+
   TextStyle get crosshairInformationBoxTitleStyle;
 
   TextStyle get crosshairInformationBoxQuoteStyle;
@@ -93,6 +103,10 @@ abstract class ChartTheme {
   Color get floatingMenuContainerGlassColor;
 
   Color get floatingMenuDragIconColor;
+
+  /// Color of a resizable chart panel divider's line and drag handle while
+  /// it's being dragged.
+  Color get panelDividerActiveColor;
 
   Color get lineThicknessDropdownButtonTextColor;
 
